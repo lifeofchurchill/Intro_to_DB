@@ -24,7 +24,7 @@ address TEXT NOT NULL
 
 CREATE TABLE Orders (
 order_id INT AUTO_INCREMENT PRIMARY KEY,
-FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
+FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
 order_date DATE
 );
 
