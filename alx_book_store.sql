@@ -31,6 +31,6 @@ order_date DATE
 CREATE TABLE order_details (
 orderdetailid INT AUTO_INCREMENT PRIMARY KEY,
 FOREIGN KEY (order_id) REFERENCES Orders(order_id),
-FOREIGN KEY (book_id) REFERENCES Book(book_id),
+FOREIGN KEY (book_id) REFERENCES Books(book_id),
 quantity DOUBLE
 );
